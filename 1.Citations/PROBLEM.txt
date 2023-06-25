@@ -1,0 +1,62 @@
+The problem to solve is to listen to user's input and write to the screen a specific citation, that matches his input.
+The valid inputs are numbers from 1 to 9. If the input number is invalid the program prints "luj\n" to the terminal.
+
+Desired behaviour of the program:
+/--------------------------------------------------------------------------------------
+ml' nob:
+1
+Qapla'
+noH QapmeH wo' Qaw'lu'chugh yay chavbe'lu' 'ej wo' choqmeH may' DoHlu'chugh lujbe'lu'.
+/--------------------------------------------------------------------------------------
+ml' nob:
+2
+Qapla'
+bortaS bIr jablu'DI' reH QaQqu' nay'.
+/--------------------------------------------------------------------------------------
+ml' nob:
+3
+Qapla'
+Qu' buSHa'chugh SuvwI', batlhHa' vangchugh, qoj matlhHa'chugh, pagh ghaH SuvwI''e'.
+/--------------------------------------------------------------------------------------
+ml' nob:
+4
+Qapla'
+bISeH'eghlaH'be'chugh latlh Dara'laH'be'.
+/--------------------------------------------------------------------------------------
+ml' nob:
+5
+Qapla'
+qaStaHvIS wa' ram loS SaD Hugh SIjlaH qetbogh loD.
+/--------------------------------------------------------------------------------------
+ml' nob:
+6
+Qapla'
+Suvlu'taHvIS yapbe' HoS neH.
+/--------------------------------------------------------------------------------------
+ml' nob:
+007
+Qapla'
+Ha'DIbaH DaSop 'e' DaHechbe'chugh yIHoHQo'.
+/--------------------------------------------------------------------------------------
+ml' nob:
+8
+Qapla'
+Heghlu'meH QaQ jajvam.
+/--------------------------------------------------------------------------------------
+ml' nob:
+00009
+Qapla'
+leghlaHchu'be'chugh mIn lo'laHbe' taj jej.
+/--------------------------------------------------------------------------------------
+ml' nob:
+10
+luj
+/--------------------------------------------------------------------------------------
+ml' nob:
+0
+luj
+/--------------------------------------------------------------------------------------
+ml' nob:
+abc
+luj
+/--------------------------------------------------------------------------------------
