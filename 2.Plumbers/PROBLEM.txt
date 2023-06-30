@@ -1,0 +1,95 @@
+Úkolem je vytvořit program, který dokáže určit optimální délku potrubí.
+
+Předpokládáme, že máme místnost ve tvaru krychle o délce strany a. Na stěnách místnosti jsou dvě místa, která chceme
+propojit potrubím. Úkolem je určit, jaká bude nejmenší potřebná délka potrubí. Uvažujeme 2 varianty propojení:
+
+1.) trubky ve zdech. Trubky lze umístit pouze rovnoběžně s hranami krychle (důvodem je omezený repertoár spojovacích armatur),
+2.) hadice ve zdech. Hadice lze umístit do zdí v libovolném směru, nemusí být rovnoběžné s hranami (hadice nepotřebují armatury, lze je ohýbat).
+
+Uvažujeme pouze stěny krychle. Propojované body, trubky ani hadice nelze umístit do podlahy ani stropu.
+
+Vstupem programu je velikost místnosti (rozměr krychle a) a zadání 2 bodů. Každý bod je zadaný pomocí souřadnic x,
+y a z. Zadávané hodnoty jsou celá čísla. Krychle je umístěna jedním vrcholem do počátku souřadného systému a její
+hrany jsou rovnoběžné s osami x/y/z.
+
+Výstupem programu je vypočtená potřebná délka trubek a vypočtená potřebná délka hadice. Při výpočtu zanedbáváme
+délku ohybu. Program zobrazí vypočtené hodnoty ve formátu dle ukázky. Za každým řádkem výpisu je znak odřádkování (\n).
+
+Program musí být schopen detekovat nesprávný vstup. Pokud je na vstupu nesmyslné zadání, program to zjistí, vypíše
+chybové hlášení a ukončí se. Formát chybového hlášení je uveden v ukázce níže. Pozor, za případným chybovým
+hlášením je odřádkování (\n). Chybová hlášení zasílejte na standardní výstup (printf), nezasílejte jej na chybový výstup. 
+Za chybu je považováno:
+
+a) nečíselná, nulová nebo záporná hodnota velikosti místnosti,
+b) nečíselná hodnota souřadnice při zadávání bodů,
+c) zadaný bod neleží v žádné stěně,
+d) bod leží v podlaze nebo ve stropu (souřadnice z je nulová nebo rovna velikosti místnosti),
+e) bod leží příliš blízko rohu místnosti (za správně zadané považujeme pouze body ležící alespoň 20 od hrany).
+
+Ukázka práce programu:
+--------------------------------------
+Rozmer mistnosti:
+300
+Bod #1:
+100 0 100
+Bod #2:
+0 200 20
+Delka potrubi: 380
+Delka hadice: 310.483494
+--------------------------------------
+Rozmer mistnosti:
+300
+Bod #1:
+100 0 100
+Bod #2:
+300 200 100
+Delka potrubi: 400
+Delka hadice: 400.000000
+--------------------------------------
+Rozmer mistnosti:
+300
+Bod #1:
+0 130 100
+Bod #2:
+300 200 280
+Delka potrubi: 750
+Delka hadice: 597.745765
+--------------------------------------
+Rozmer mistnosti:
+184
+Bod #1:
+21 0 37
+Bod #2:
+96 184 55
+Delka potrubi: 319
+Delka hadice: 301.537726
+--------------------------------------
+Rozmer mistnosti:
+300
+Bod #1:
+100 0 400
+Nespravny vstup.
+--------------------------------------
+Rozmer mistnosti:
+300
+Bod #1:
+100 0 100 
+Bod #2:
+10 300 100
+Nespravny vstup.
+--------------------------------------
+Rozmer mistnosti:
+300
+Bod #1:
+100 100 0
+Nespravny vstup.
+--------------------------------------
+Rozmer mistnosti:
+300
+Bod #1:
+100 0 100
+Bod #2:
+50 50 test
+Nespravny vstup.
+--------------------------------------
+
