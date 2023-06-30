@@ -1,5 +1,5 @@
-Room dimension:
-Point #1:
-Point #2:
-Piping length: 750
-Hose length: 597.745765
+Rozmer mistnosti:
+Bod #1:
+Bod #2:
+Delka potrubi: 750
+Delka hadice: 597.745765
