@@ -1,0 +1,23 @@
+Úkolem je realizovat funkci (ne celý program, pouze funkci), která bude počítat číselné palindromy.
+
+Palindrom je řetězec, který při čtení zleva doprava je stejný jako při čtení zprava doleva. Příkladem je slovo "oko". Číslo
+může být také palindromem, například číslo 181 je palindrom. U čísel je důležité, v jaké číselné soustavě je zapíšeme.
+Například číslo 17 (dec) není v desítkové soustavě palindrom, ale ve dvojkove soustavě je, protože 17 (dec) = 10001 (bin).
+
+Úkolem je realizovat funkci, která bude hledat nejbližší větší číslo, které je v zadané číselné soustavě palindrom.
+Funkce bude mít rozhraní:
+
+int nextPalindrome(unsigned long long from, int radix, unsigned long long * next);
+
+from -> určuje od kterého čísla hledáme palindrom. Hledáme číslo-palindrom, které je větší než toto from. Tedy pokud
+samotné from je palindrom, bude vráceno další větší číslo-palindrom.
+
+radix -> určuje v jaké číselné soustavě má být nalezené číslo palindromem. Hodnota radix musí být v rozmezí 2 až 36 (včetně).
+
+next -> je výstupním parametrem, kam funkce umístí nalezené číslo-palindrom. Pokud funkce neuspěje (viz níže), pak
+výstupní parametr ponechá beze změny.
+
+návratová hodnota -> indikuje úspěch volání (hodnota 1) nebo neúspěch (hodnota 0). Neúspěch nastane, pokud je zadaná neplatná
+číselná soustava (radix není v intervalu 2 až 36 včetně) nebo pokud nelze najít palindrom větší než from
+(nevejde se do rozsahu datového typu unsigned long long).
+
