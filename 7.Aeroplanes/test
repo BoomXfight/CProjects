@@ -1,0 +1,15 @@
+#!/bin/bash
+
+PROG=./a.out
+
+for IN_FILE in tests/*_in.txt; do
+  REF_FILE=$(echo -n $IN_FILE | sed -e 's/_in\(.*\)$/_out\1/')
+  $PROG < $IN_FILE > my_out.txt
+  if ! diff $REF_FILE my_out.txt; then
+    echo "Fail: $IN_FILE":
+    exit
+  else
+    echo "OK: $IN_FILE":
+  fi
+done
+
