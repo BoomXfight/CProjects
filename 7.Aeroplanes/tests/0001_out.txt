@@ -1,0 +1,7 @@
+Pozice letadel:
+Vzdalenost nejblizsich letadel: 3.535534
+Nalezenych dvojic: 4
+Qantas - KLM
+AirFrance - KLM
+KLM - KLM
+KLM - Lufthansa

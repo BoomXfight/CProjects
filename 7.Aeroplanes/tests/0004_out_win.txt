@@ -1,0 +1,9 @@
+Pozice letadel:
+Vzdalenost nejblizsich letadel: 0.000000
+Nalezenych dvojic: 6
+AirFrance - Lufthansa
+AirFrance - LOT
+Lufthansa - LOT
+Ryanair - Wizz
+Ryanair - Qantas
+Wizz - Qantas

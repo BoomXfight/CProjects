@@ -1,0 +1,4 @@
+Pozice letadel:
+Vzdalenost nejblizsich letadel: 12.165525
+Nalezenych dvojic: 1
+LOT - SmartWings

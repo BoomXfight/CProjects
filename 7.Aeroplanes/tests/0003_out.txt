@@ -1,0 +1,4 @@
+Pozice letadel:
+Vzdalenost nejblizsich letadel: 2000000.000000
+Nalezenych dvojic: 1
+LOT - KLM
